@@ -71,7 +71,7 @@ main(void)
   uip_ipaddr(ipaddr, 255,255,255,0);
   uip_setnetmask(ipaddr);
 
-  httpd_init();
+  httpd_init(80);
   
   /*  telnetd_init();*/
   

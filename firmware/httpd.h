@@ -53,7 +53,7 @@ struct httpd_state {
   unsigned short count;
 };
 
-void httpd_init(void);
+int httpd_init(int port);
 void httpd_appcall(void);
 
 void httpd_log(char *msg);

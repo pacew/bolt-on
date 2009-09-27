@@ -4,3 +4,6 @@
 makefsdata
 httpd-fsdata.c
 uip
+htest
+TMP*
+TAGS

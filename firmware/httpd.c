@@ -328,10 +328,10 @@ httpd_appcall(void)
  *             This function initializes the web server and should be
  *             called at system boot-up.
  */
-void
-httpd_init(void)
+int
+httpd_init(int port)
 {
-  uip_listen(HTONS(80));
+	return (uip_listen(HTONS(port)));
 }
 /*---------------------------------------------------------------------------*/
 /** @} */

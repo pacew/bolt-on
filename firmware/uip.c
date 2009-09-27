@@ -525,15 +525,17 @@ uip_unlisten(u16_t port)
   }
 }
 /*---------------------------------------------------------------------------*/
-void
+int
 uip_listen(u16_t port)
 {
   for(c = 0; c < UIP_LISTENPORTS; ++c) {
     if(uip_listenports[c] == 0) {
       uip_listenports[c] = port;
-      return;
+      return (0);
     }
   }
+
+  return (-1);
 }
 /*---------------------------------------------------------------------------*/
 /* XXX: IP fragment reassembly: not well-tested. */
