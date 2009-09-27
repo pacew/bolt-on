@@ -1,0 +1,6 @@
+?
+*~
+*.o
+makefsdata
+httpd-fsdata.c
+uip
